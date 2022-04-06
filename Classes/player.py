@@ -1,4 +1,5 @@
 import time
+from item import Item
 
 # GLOBAL VARIABLES
 collide_list = [4, 5, 22, 23, 26, 39, 40, 41, 43, 57, 59, 60, 75, 76, 77, 78, 92, 93, 94, 95, 96]
@@ -16,7 +17,7 @@ class Player:
         self.other_players_list = []
         self.projectiles = []
         self.picked = 0
-        self.inventory = []  # to add items later
+        self.inventory = [Item("bow", 1), False, False, False, False, False]  # to add items later
         self.gold = 0
         self.health = 100
         self.nickname = nickname
